@@ -6,14 +6,11 @@ for t in range (t):
 
     s = input()
 
-    counter = 0
-    
-    s = floor(2.4)
-
     t0 = n * b + n * a
     
     tc = 0
     t1 = 0
+    counter = 0
 
     for i in range (n):
         if s[i] == '0':
@@ -23,6 +20,7 @@ for t in range (t):
             if counter:
                 t1 += counter * a + b
                 counter = 0
+
     if counter:
         t1 += counter * a + b
 
@@ -32,6 +30,7 @@ for t in range (t):
     tc = 0
     t2 = 0
     counter = 0
+
     for i in range (n):
         if s[i] == '1':
             tc += 1
@@ -40,6 +39,7 @@ for t in range (t):
             if counter:
                 t2 += counter * a + b
                 counter = 0
+                
     if counter:
         t2 += counter * a + b
 
